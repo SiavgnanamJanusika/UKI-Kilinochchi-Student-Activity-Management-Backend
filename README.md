@@ -1,16 +1,16 @@
-# 🎓 UKI Kilinochchi - Student Activity Management Backend
+#  UKI Kilinochchi - Student Activity Management Backend
 
 A complete REST API backend for managing student activities at UKI Kilinochchi, built with Node.js, Express.js, and MySQL.
 
 ---
 
-## 📌 Project Description
+## Project Description
 
 This backend system handles student registrations, course management, enrollments, task assignments, task submissions with results, and attendance tracking. It uses JWT-based authentication with role-based access control for Admin and Student roles.
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 | Technology | Purpose |
 |---|---|
@@ -26,7 +26,7 @@ This backend system handles student registrations, course management, enrollment
 
 ---
 
-## 📁 Folder Structure
+##  Folder Structure
 
 ```
 uki-student-activity-backend/
@@ -66,7 +66,7 @@ uki-student-activity-backend/
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 ### 1. Clone the Repository
 ```bash
@@ -116,16 +116,16 @@ Password: "  "
 
 ---
 
-## 📡 API Endpoints
+##  API Endpoints
 
-### 🔐 Authentication  `/api/auth`
+### Authentication  `/api/auth`
 | Method | Endpoint | Access | Description |
 |--------|----------|--------|-------------|
 | POST | `/register` | Public | Register new student |
 | POST | `/login` | Public | Login & get JWT token |
 | GET | `/profile` | Protected | Get logged-in user profile |
 
-### 👤 User Management  `/api/users`
+### User Management  `/api/users`
 | Method | Endpoint | Access | Description |
 |--------|----------|--------|-------------|
 | GET | `/` | Admin | Get all users |
@@ -133,7 +133,7 @@ Password: "  "
 | PUT | `/:id` | Admin / Own Student | Update user |
 | DELETE | `/:id` | Admin | Delete user |
 
-### 📚 Course Management  `/api/courses`
+###  Course Management  `/api/courses`
 | Method | Endpoint | Access | Description |
 |--------|----------|--------|-------------|
 | POST | `/` | Admin | Create course |
@@ -142,7 +142,7 @@ Password: "  "
 | PUT | `/:id` | Admin | Update course |
 | DELETE | `/:id` | Admin | Delete course |
 
-### 📝 Enrollment Management  `/api/enrollments`
+###  Enrollment Management  `/api/enrollments`
 | Method | Endpoint | Access | Description |
 |--------|----------|--------|-------------|
 | POST | `/` | Student / Admin | Enroll in a course |
@@ -152,7 +152,7 @@ Password: "  "
 | PUT | `/:id` | Admin | Update enrollment status |
 | DELETE | `/:id` | Admin | Delete enrollment |
 
-### ✅ Task Management  `/api/tasks`
+### Task Management  `/api/tasks`
 | Method | Endpoint | Access | Description |
 |--------|----------|--------|-------------|
 | POST | `/` | Admin | Create task |
@@ -162,7 +162,7 @@ Password: "  "
 | PUT | `/:id` | Admin | Update task |
 | DELETE | `/:id` | Admin | Delete task |
 
-### 📤 Task Submission & Results  `/api/task-submissions`
+### Task Submission & Results  `/api/task-submissions`
 | Method | Endpoint | Access | Description |
 |--------|----------|--------|-------------|
 | POST | `/` | Student | Submit a task |
@@ -172,7 +172,7 @@ Password: "  "
 | PUT | `/:id` | Admin / Student | Update submission / marks / feedback |
 | DELETE | `/:id` | Admin | Delete submission |
 
-### 📅 Attendance Management  `/api/attendance`
+###  Attendance Management  `/api/attendance`
 | Method | Endpoint | Access | Description |
 |--------|----------|--------|-------------|
 | POST | `/` | Admin | Mark attendance |
@@ -185,7 +185,7 @@ Password: "  "
 
 ---
 
-## 🧪 Postman Testing Flow
+##  Postman Testing Flow
 
 Test in this order for full real-time flow:
 
@@ -215,7 +215,7 @@ Headers:
 
 ---
 
-## 🌿 Git Branch Workflow
+##  Git Branch Workflow
 
 ```bash
 main                      # Production-ready code
@@ -240,7 +240,7 @@ git merge auth-schema
 
 ---
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 ```
 Request → Routes → Middleware (JWT + Role) → Controller → MySQL → Response
@@ -254,7 +254,7 @@ Request → Routes → Middleware (JWT + Role) → Controller → MySQL → Resp
 
 ---
 
-## 🔒 Security Features
+##  Security Features
 
 - Passwords hashed using **bcryptjs** (10 salt rounds)
 - **JWT tokens** expire in 7 days
@@ -264,7 +264,7 @@ Request → Routes → Middleware (JWT + Role) → Controller → MySQL → Resp
 
 ---
 
-## 🗄️ Database Tables
+##  Database Tables
 
 | Table | Description |
 |---|---|
@@ -277,7 +277,7 @@ Request → Routes → Middleware (JWT + Role) → Controller → MySQL → Resp
 
 ---
 
-## 👨‍💻 Developer
+##  Developer
 
 **Student Name:** [Janushika Sivagnanam]  
 **Institution:** UKI Kilinochchi  
